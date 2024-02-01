@@ -63,7 +63,6 @@ const limiter = rateLimit({
 // rate limit api requests
 export const config = {
     api: {
-        middleware: [limiter],
         bodyParser: {
             sizeLimit: "1mb",
         },
